@@ -36,6 +36,8 @@ def valid_phone_number?(phone)
       return true
     elsif phone.match(/\W\d{3}\W\d{7}/) != nil
       return true
+    elsif phone.match(/\d{3}\W\d{7}/) != nil
+      return true
     else
        return false
     end
