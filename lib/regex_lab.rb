@@ -20,13 +20,13 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
      if text.match(/\A[A-Z]/) == nil
         return false
-    end 
+    end
     if text.match(/.\z/) ==  nil
        return false
-    end 
+    end
     if text.match(/\A[A-Z]/) != nil && text.match(/.\z/) !=  nil
        return true
-    end    
+    end
 end
 
 def valid_phone_number?(phone)
