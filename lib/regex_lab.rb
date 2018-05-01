@@ -21,10 +21,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
      if text.match(/\A[A-Z]/) == nil
         return false
     end
-    if text.match(/.\z/) ==  nil
+    if text.match(/\W\z/) ==  nil
        return false
     end
-    if text.match(/\A[A-Z]/) != nil && text.match(/.\z/) !=  nil
+    if text.match(/\A[A-Z]/) != nil && text.match(/\W\z/) !=  nil
        return true
     end
 end
